@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/frontLogo">
+        <file>img/pac-man-logo.jpg</file>
+    </qresource>
+    <qresource prefix="/new/icon">
+        <file>img/icon.ico</file>
+    </qresource>
+</RCC>

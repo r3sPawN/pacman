@@ -6,6 +6,7 @@ pacmanWindow::pacmanWindow(QWidget *parent)
     , ui(new Ui::pacmanWindow)
 {
     ui->setupUi(this);
+    this->setFixedSize(QSize(640, 480));
 }
 
 pacmanWindow::~pacmanWindow()
@@ -13,3 +14,8 @@ pacmanWindow::~pacmanWindow()
     delete ui;
 }
 
+
+void pacmanWindow::on_pushButtonPlay_clicked()
+{
+    //open game window
+}

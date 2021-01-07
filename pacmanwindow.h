@@ -15,6 +15,9 @@ public:
     pacmanWindow(QWidget *parent = nullptr);
     ~pacmanWindow();
 
+private slots:
+    void on_pushButtonPlay_clicked();
+
 private:
     Ui::pacmanWindow *ui;
 };
