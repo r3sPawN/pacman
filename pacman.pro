@@ -10,9 +10,11 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    pacman.cpp \
     pacmanwindow.cpp
 
 HEADERS += \
+    pacman.h \
     pacmanwindow.h
 
 FORMS += \

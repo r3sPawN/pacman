@@ -1,4 +1,4 @@
-#include "pacmanwindow.h"
+ #include "pacmanwindow.h"
 
 #include <QApplication>
 

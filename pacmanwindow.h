@@ -2,6 +2,9 @@
 #define PACMANWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class pacmanWindow; }
@@ -20,5 +23,8 @@ private slots:
 
 private:
     Ui::pacmanWindow *ui;
+    QGraphicsScene *pacman_scene;
+    QGraphicsView *view;
+    QTimer *timer;
 };
 #endif // PACMANWINDOW_H
