@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QDebug>
+#include <QPixmap>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class pacmanWindow; }

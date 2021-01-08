@@ -19,7 +19,10 @@ pacmanWindow::~pacmanWindow()
 void pacmanWindow::on_pushButtonPlay_clicked()
 {
     pacman_scene = new QGraphicsScene();
-    pacman_scene->setSceneRect(0, 0, 500, 500);
+    pacman_scene->setSceneRect(0, 0, 600, 600);
+    QPixmap background(":/new/level/img/PacmanLevel-1.png");
+    pacman_scene->setBackgroundBrush(background.scaled(600, 600 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+
     pacman *icon = new pacman;
     icon->setFlag(QGraphicsItem::ItemIsFocusable);
     icon->setFocus();
