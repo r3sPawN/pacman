@@ -9,4 +9,7 @@
         <file>img/PacmanLevel-1.png</file>
         <file>img/level500x500.png</file>
     </qresource>
+    <qresource prefix="/new/pachead">
+        <file>img/pacopen3l.png</file>
+    </qresource>
 </RCC>

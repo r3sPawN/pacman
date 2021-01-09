@@ -19,7 +19,8 @@ QRectF pacman::boundingRect() const // bound the size of the pacman icon
 void pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *options, QWidget *widget)
 {
     QRectF test = boundingRect();
-    QBrush Brush(Qt::yellow);
+    QBrush Brush;
+    Brush.setTextureImage(QImage(":/new/pachead/img/pacopen3l.png").scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
     painter->fillRect(test, Brush);
     painter->drawRect(test);
 }
