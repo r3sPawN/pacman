@@ -3,6 +3,7 @@
 
 pacman::pacman()
 {
+
     int startX = 200;
     int startY = 200;
     setPos(mapToParent(startX, startY));

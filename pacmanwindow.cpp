@@ -18,7 +18,7 @@ pacmanWindow::~pacmanWindow()
 
 void pacmanWindow::on_pushButtonPlay_clicked()
 {
-    pacman_scene = new QGraphicsScene();
+    /*pacman_scene = new QGraphicsScene();
     pacman_scene->setSceneRect(0, 0, 600, 600);
     QPixmap background(":/new/level/img/PacmanLevel-1.png");
     pacman_scene->setBackgroundBrush(background.scaled(600, 600 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
@@ -31,4 +31,5 @@ void pacmanWindow::on_pushButtonPlay_clicked()
     view = new QGraphicsView(pacman_scene);
     view->show();
     hide(); // hide mainwindow
+    */
 }

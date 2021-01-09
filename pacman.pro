@@ -11,13 +11,16 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     pacman.cpp \
+    pacman_board.cpp \
     pacmanwindow.cpp
 
 HEADERS += \
     pacman.h \
+    pacman_board.h \
     pacmanwindow.h
 
 FORMS += \
+    pacman_board.ui \
     pacmanwindow.ui
 
 # Default rules for deployment.
