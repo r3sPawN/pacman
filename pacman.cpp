@@ -4,8 +4,8 @@
 pacman::pacman()
 {
 
-    int startX = 200;
-    int startY = 200;
+    int startX = 288;
+    int startY = 420;
     setPos(mapToParent(startX, startY));
     setFlag(ItemIsFocusable);
     setFocus();
@@ -20,7 +20,7 @@ void pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *options, Q
 {
     QRectF test = boundingRect();
     QBrush Brush;
-    Brush.setTextureImage(QImage(":/new/pachead/img/pacopen3l.png").scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+    Brush.setTextureImage(QImage(":/new/pachead/img/pacround.png").scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
     painter->fillRect(test, Brush);
     painter->drawRect(test);
 }

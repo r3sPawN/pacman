@@ -11,5 +11,14 @@
     </qresource>
     <qresource prefix="/new/pachead">
         <file>img/pacopen3l.png</file>
+        <file>img/pacdown1.png</file>
+        <file>img/pacdown2.png</file>
+        <file>img/pacleft1.png</file>
+        <file>img/pacleft2.png</file>
+        <file>img/pacright1.png</file>
+        <file>img/pacright2.png</file>
+        <file>img/pacround.png</file>
+        <file>img/pacup1.png</file>
+        <file>img/pacup2.png</file>
     </qresource>
 </RCC>
