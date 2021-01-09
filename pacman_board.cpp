@@ -19,6 +19,8 @@ pacman_board::pacman_board(QWidget *parent) :
     icon->setFocus();
     pacman_scene->addItem(icon);
 
+    ui->graphicsView->setScene(pacman_scene);
+
 }
 
 pacman_board::~pacman_board()
