@@ -25,8 +25,6 @@ private slots:
 
 private:
     Ui::pacmanWindow *ui;
-    QGraphicsScene *pacman_scene;
-    QGraphicsView *view;
     QTimer *timer;
     pacman_board *pac_b;
 };

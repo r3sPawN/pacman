@@ -2,6 +2,9 @@
 #define PACMAN_BOARD_H
 
 #include <QDialog>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QGraphicsItem>
 
 namespace Ui {
 class pacman_board;
@@ -17,6 +20,8 @@ public:
 
 private:
     Ui::pacman_board *ui;
+    QGraphicsScene *pacman_scene;
+
 };
 
 #endif // PACMAN_BOARD_H
