@@ -35,4 +35,5 @@ void pacmanWindow::on_pushButtonPlay_clicked()
 
     pac_b = new pacman_board();
     pac_b->show();
+    hide();
 }

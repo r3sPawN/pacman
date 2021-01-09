@@ -11,12 +11,18 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Pac-man</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/new/icon/img/icon.ico</normaloff>:/new/icon/img/icon.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/new/level/img/level500x500.png);</string>
   </property>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
