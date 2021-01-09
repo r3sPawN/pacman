@@ -6,6 +6,7 @@
 #include <QGraphicsView>
 #include <QDebug>
 #include <QPixmap>
+#include <pacman_board.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class pacmanWindow; }
@@ -27,5 +28,6 @@ private:
     QGraphicsScene *pacman_scene;
     QGraphicsView *view;
     QTimer *timer;
+    pacman_board *pac_b;
 };
 #endif // PACMANWINDOW_H
