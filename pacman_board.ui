@@ -18,7 +18,7 @@
     <normaloff>:/new/icon/img/icon.ico</normaloff>:/new/icon/img/icon.ico</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/new/level/img/level500x500.png);</string>
+   <string notr="true"/>
   </property>
   <widget class="QGraphicsView" name="graphicsView">
    <property name="geometry">
@@ -28,6 +28,15 @@
      <width>501</width>
      <height>501</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/new/level/img/level500x500.png);</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
  </widget>

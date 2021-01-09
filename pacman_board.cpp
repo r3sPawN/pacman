@@ -12,7 +12,7 @@ pacman_board::pacman_board(QWidget *parent) :
     pacman_scene = new QGraphicsScene(this);
     pacman_scene->setSceneRect(0, 0, 600, 600);
     //QPixmap background(":/new/level/img/PacmanLevel-1.png");
-    //pacman_scene->setBackgroundBrush(background.scaled(600, 600 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+    //pacman_scene->setBackgroundBrush(background.scaled(500, 500 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
 
     pacman *icon = new pacman;
     icon->setFlag(QGraphicsItem::ItemIsFocusable);
