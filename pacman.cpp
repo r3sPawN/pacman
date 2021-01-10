@@ -53,68 +53,68 @@ void pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *options, Q
                 painter->drawRect(this->boundingRect());
             }
         break;
-    case 1: //right direction
-        if(animation_state < 2){
-            QBrush brush;
-            brush.setTexture(directionRight_1.scaled(20, 20, Qt::IgnoreAspectRatio,Qt::SmoothTransformation ));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        else if(animation_state < 4){
-            QBrush brush;
-            brush.setTexture(directionRight_2.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        else if(animation_state < 6) {
-            QBrush brush;
-            brush.setTexture(pacman_roundImg.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        break;
-    case 2: //up direction
-        if(animation_state < 2){
-            QBrush brush;
-            brush.setTexture(directionUp_1.scaled(20, 20, Qt::IgnoreAspectRatio,Qt::SmoothTransformation ));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        else if(animation_state < 4){
-            QBrush brush;
-            brush.setTexture(directionUP_2.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        else if(animation_state < 6) {
-            QBrush brush;
-            brush.setTexture(pacman_roundImg.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        break;
-    case 3: //up direction
-        if(animation_state < 2){
-            QBrush brush;
-            brush.setTexture(directionDown_1.scaled(20, 20, Qt::IgnoreAspectRatio,Qt::SmoothTransformation ));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        else if(animation_state < 4){
-            QBrush brush;
-            brush.setTexture(directionDown_2.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        else if(animation_state < 6) {
-            QBrush brush;
-            brush.setTexture(pacman_roundImg.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
-            painter->fillRect(this->boundingRect(), brush);
-            painter->drawRect(this->boundingRect());
-        }
-        break;
+        case 1: //right direction
+            if(animation_state < 2){
+                QBrush brush;
+                brush.setTexture(directionRight_1.scaled(20, 20, Qt::IgnoreAspectRatio,Qt::SmoothTransformation ));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            else if(animation_state < 4){
+                QBrush brush;
+                brush.setTexture(directionRight_2.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            else if(animation_state < 6) {
+                QBrush brush;
+                brush.setTexture(pacman_roundImg.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            break;
+        case 2: //up direction
+            if(animation_state < 2){
+                QBrush brush;
+                brush.setTexture(directionUp_1.scaled(20, 20, Qt::IgnoreAspectRatio,Qt::SmoothTransformation ));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            else if(animation_state < 4){
+                QBrush brush;
+                brush.setTexture(directionUP_2.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            else if(animation_state < 6) {
+                QBrush brush;
+                brush.setTexture(pacman_roundImg.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            break;
+            case 3: //up direction
+            if(animation_state < 2){
+                QBrush brush;
+                brush.setTexture(directionDown_1.scaled(20, 20, Qt::IgnoreAspectRatio,Qt::SmoothTransformation ));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            else if(animation_state < 4){
+                QBrush brush;
+                brush.setTexture(directionDown_2.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            else if(animation_state < 6) {
+                QBrush brush;
+                brush.setTexture(pacman_roundImg.scaled(20, 20 , Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+                painter->fillRect(this->boundingRect(), brush);
+                painter->drawRect(this->boundingRect());
+            }
+            break;
 
- }
+     }
 }
 
 void pacman::keyPressEvent(QKeyEvent *event)
@@ -161,7 +161,21 @@ int pacman::getDirection() //direction getter
 void pacman::advance(int phase)
 {
 
-    //setPos(x() - 10, y());
+    switch (getDirection()) {
+        case 0:
+             setPos(x() - 5, y());
+        break;
+        case 1:
+             setPos(x() + 5 , y());
+        break;
+        case 2:
+             setPos(x(), y() - 5);
+        break;
+        case 3:
+             setPos(x(), y() + 5);
+        break;
+        }
+
     if(animation_state>3 ){
         animation_state=0;
     }else{
