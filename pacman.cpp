@@ -119,29 +119,25 @@ void pacman::paint(QPainter *painter, const QStyleOptionGraphicsItem *options, Q
 
 void pacman::keyPressEvent(QKeyEvent *event)
 {
-    qDebug() <<  direction ;
+
     if( event->key() == Qt::Key_Left )
      {
          setDirection(0);
-         setPos(x() - 5, y());
      }
 
     if( event->key() == Qt::Key_Right )
      {
          setDirection(1);
-         setPos(x() + 5, y());
      }
 
     if( event->key() == Qt::Key_Up )
      {
            setDirection(2);
-           setPos(x(), y() - 5);
      }
 
     if( event->key() == Qt::Key_Down )
      {
            setDirection(3);
-           setPos(x(), y() + 5);
     }
 }
 
