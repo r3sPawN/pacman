@@ -6,6 +6,8 @@
 #include <QGraphicsView>
 #include <QGraphicsItem>
 #include <QTimer>
+#include <QtCore>
+#include <QtGui>
 
 namespace Ui {
 class pacman_board;
