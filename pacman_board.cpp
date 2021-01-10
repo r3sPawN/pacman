@@ -23,7 +23,7 @@ pacman_board::pacman_board(QWidget *parent) :
 
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), pacman_scene, SLOT(advance()));
-    timer->start(100);
+    timer->start(200);
 
 }
 
