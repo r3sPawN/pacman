@@ -12,11 +12,13 @@ SOURCES += \
     main.cpp \
     pacman.cpp \
     pacman_board.cpp \
+    pacman_dots.cpp \
     pacmanwindow.cpp
 
 HEADERS += \
     pacman.h \
     pacman_board.h \
+    pacman_dots.h \
     pacmanwindow.h
 
 FORMS += \

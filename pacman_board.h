@@ -8,6 +8,7 @@
 #include <QTimer>
 #include <QtCore>
 #include <QtGui>
+#include <QVector>
 
 namespace Ui {
 class pacman_board;
